@@ -1,0 +1,1 @@
+使用canvas+JavaScript面向对象编程实现
