@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=egde, chrome=1"><!-- 文档兼容模式定义，指定IE使用最新引擎渲染网页，Chrome启用Chrome Frame -->
+	<meta name="render" content="webkit"><!-- 浏览器极速渲染模式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 移动端视窗缩放功能禁用 -->
+	<title>响应式网页制作</title>
+	<meta name="keywords" content="html css javascript 响应式 个人作品">
+	<meta name="description" content="html css javascript 响应式 个人作品">
+	<meta name="author" content="design by pub_chen@163.com">
+	<meta name="copyright" content="copyright © by 陈啸">
+	<link rel="shortcut icon" href="/.../favicon.ico"><!-- 设置标题栏和收藏夹logo -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="fix">
+		<div class="container navbar">
+			<a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+			<nav class="clearfix">
+				<ul>
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="example.html">关于我们</a>             
+						<ul class="transition-300">
+							<li><a href="">公司简介</a></li>
+							<li><a href="">资质荣誉</a></li>
+							<li><a href="">企业文化</a></li>
+							<li><a href="">公司图片</a></li>
+						</ul>
+					</li>
+					<li><a href="service.html">服务</a>
+						<ul class="transition-300">
+							<li><a href="">人工智能</a></li>
+							<li><a href="">大数据</a></li>
+							<li><a href="">虚拟现实</a></li>
+							<li><a href="">物联网</a></li>
+						</ul></li>
+						<li><a href="company.html">案例</a></li>
+						<li><a href="news.html">新闻中心</a></li>
+						<li><a href="employee.html">员工中心</a>
+							<ul class="transition-300">
+								<li><a href="">公司招聘</a></li>
+								<li><a href="">员工培训</a></li>
+								<li><a href="">激励制度</a></li>
+							</ul></li>
+							<li><a href="contact.html">联系我们</a></li>
+						</ul>
+					</nav>
+					<div class="lang transition-300">
+						<a href="zh.index.com">中文</a>
+						<a href="en.index.com" class="lang-en" target="_blank">English</a>
+					</div>
+					<div class="product ">
+						<span>产品</span>
+						<div class="product-box" id="product-box">
+							<ul>
+								<li><a href="">数字展馆</a></li>
+								<li><a href="">5G实验室</a></li>
+								<li><a href="">人工智能</a></li>
+								<li><a href="">3D打印</a></li>
+								<li><a href="">物联网</a></li>
+								<li><a href="">区块链</a></li>
+							</ul>
+						</div>
+					</div>
+					<span class="menu">
+						<div class="nav-toggle" id="nav-toggle">
+							<ul>
+								<li><a href="">首页</a></li>
+								<li><a href="">关于我们</a></li>
+								<li><a href="">服务</a></li>
+								<li><a href="">案例</a></li>
+								<li><a href="">新闻中心</a></li>
+								<li><a href="">员工中心</a></li>
+								<li><a href="">联系我们</a></li>
+							</ul>
+						</div>
+					</span>
+				</div>
+			</header>
+			<!-- 头部结束 -->
+
+			<!-- 轮播图 -->
+			
+			<section class="banner">
+					<div class="banner-redirection">
+						<ul>
+							<li class="active"><a href=""><img src="images/banner-1.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/banner-2.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/banner-3.jpg" alt=""></a></li>
+						</ul>
+						<div class="pagination">
+						<ul>
+							<li class="active"><i class="pagination-1"></i></li>
+							<li><i class="pagination-2"></i></li>
+							<li><i class="pagination-3"></i></li>
+						</ul>
+						</div>
+						<div class="banner-control">
+						<span class="toPrevious"><img src="images/leftWhiteArrow.png" alt=""></span>
+						<span class="toNext"><img src="images/rightWhiteArrow.png" alt=""></span>
+						</div>
+					</div>
+			</section>
+			<!-- 轮播图结束 -->
+			
+			<!-- 服务 -->
+			<section>
+				<div class="container">
+					<div class="hp-row hp-solutions">
+						<div class="hp-solutions-title">
+							<h2>创意 主导未来</h2>
+							<h4>立足前端技术 展望远大前途 提供优质服务</h4>
+						</div>
+						<div class="hp-solutions-content" id="hp-solutions-tab">
+							<ul id="tabs">
+								<li class="active">人工智能</li>
+								<li>大数据</li>
+								<li>虚拟现实</li>
+							</ul>
+							<ul id="tab-list" class="clearfix">
+								<li class="select">
+									<img src="images/service-1.jpg" alt="人工智能" class="item-img">
+									<div class="item-desc">
+										<div class="item-desc-title">人工智能</div>
+										<div class="item-desc-subtitle">模拟、延伸和扩展人的智能的理论、方法、技术及应用系统</div>
+										<div class="item-desc-detail">
+											<p>2D识别引擎 ，3D识别引擎，驻波识别引擎以及多维识别引擎</p>
+											<p>研究如何运用人工智能和软件技术，设计、构造和维护知识系统</p>
+											<p>人机对弈，以电子大脑挑战人脑</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/service-2.jpg" alt="大数据" class="item-img">
+									<div class="item-desc">
+										<div class="item-desc-title">大数据</div>
+										<div class="item-desc-subtitle">更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的信息资产</div>
+										<div class="item-desc-detail">
+											<p>对大量消费者提供产品或服务的企业可以利用大数据进行精准营销</p>
+											<p>做小而美模式的中小微企业可以利用大数据做服务转型</p>
+											<p>面临互联网压力之下必须转型的传统企业需要与时俱进充分利用大数据的价值</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/service-3.jpg" alt="虚拟现实" class="item-img">
+									<div class="item-desc">
+										<div class="item-desc-title">虚拟现实</div>
+										<div class="item-desc-subtitle">可以创建和体验虚拟世界的计算机仿真系统</div>
+										<div class="item-desc-detail">
+											<p>通过人机界面对复杂数据进行可视化操作与交互</p>
+											<p>艺术思维与科技工具的密切交融和二者深层渗透所产生的全新的认知体验</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- 服务结束 -->
+			
+			<!-- 右侧栏开始 -->
+			<section>
+				<div class="rightbar">
+					<ul>
+						<li class="item-1">
+							<a href="#"><img src="images/rightbar-icon1.png" alt="">15674896403</a>
+						</li>
+						<li class="item-2">
+							<a href="javascript:void(0);"><img src="images/rightbar-icon2.png" alt=""></a>
+							<div class="rightbar-weixin"><img src="images/weixin.jpg" alt=""></div>
+						</li>
+						<li class="item-3">
+							<a href="#"><img src="images/rightbar-icon3.png" alt="">点击咨询</a>
+						</li>
+						<li class="item-4">
+							<a href="javascript:void(0);"><img src="images/rightbar-icon4.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- 右侧栏结束 -->
+
+			<!-- 尾部 -->
+			<footer>
+				<div class="container">
+					<div class="part1">
+						<div class="footer-box1">
+							<span>
+								<a href="index.html"><img src="images/logo.png" alt="" class="footer-logo"></a>
+								<img src="images/weixin.jpg" alt="" class="footer-weixin">
+							</span>
+							<dl>
+								<dt><a href="">案例</a></dt>
+								<dd><a href="">数字展馆</a></dd>
+								<dd><a href="">5G实验室</a></dd>
+								<dd><a href="">人工智能</a></dd>
+								<dd><a href="">3D打印</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">公司</a></dt>
+								<dd><a href="">公司简介</a></dd>
+								<dd><a href="">资质荣誉</a></dd>
+								<dd><a href="">企业文化</a></dd>
+								<dd><a href="">公司图片</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">新闻中心</a></dt>
+								<dd><a href="">公司新闻</a></dd>
+								<dd><a href="">周年专题</a></dd>
+								<dd><a href="">大事记</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">员工中心</a></dt>
+								<dd><a href="">公司招聘</a></dd>
+								<dd><a href="">员工培训</a></dd>
+								<dd><a href="">激励制度</a></dd>
+								<dd><a href="">联系我们</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">站点链接</a></dt>
+								<dd><a href="https://www.huawei.com">华为</a></dd>
+								<dd><a href="https://www.baidu.com">百度</a></dd>
+								<dd><a href="https://www.1688.com">阿里巴巴</a></dd>
+								<dd><a href="https://www.qq.com">腾讯</a></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="part2">
+						<div class="footer-box2">
+							<a href="">网站地图</a>
+							<a href="">免责声明</a>
+							<a href="">联系我们</a>
+							<a href="">旧版链接</a>
+						</div>
+						<p>pub_chen@163.com &nbsp;&nbsp;版权所有 &nbsp;copyright © 2018-future &nbsp; ICP备XXXXXXXX号</p>
+						
+					</div>
+			</footer>
+			<!-- 尾部结束 -->
+			<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/banner.js"></script>
+		</body>
+		</html>

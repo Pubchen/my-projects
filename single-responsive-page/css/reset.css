@@ -1,0 +1,27 @@
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	-webkit-text-size-adjust: none;
+	font-size: 14px;
+	line-height: 1.42857143;/*将行高赋值为20px*/
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ol,ul,li,a,dt,dl,dd,form,input,textarea,button,a,img{ /*我们给一些常用的标签进行初步的设定，方便后续的编辑*/
+	padding:0;
+	margin:0;
+	border: 0;
+}
+
+ul,ol{/*去掉列表前的点*/
+	list-style-type:none;
+}
+
+a{/*去掉做链接产生的下划线*/
+	text-decoration:none;
+}

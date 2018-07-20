@@ -1,0 +1,441 @@
+/*头部公共样式*/
+header{
+	width: 100%;
+	height: 70px;
+	padding: 25px 0;
+	background: #fff;
+	z-index: 100;
+}
+
+.logo{
+	position: absolute;
+	display: block;
+	left: 20px;
+	height: 24px;
+	width: 125px;
+	overflow: hidden;
+}
+
+nav{
+	width: 60%;
+	margin: 0 auto;
+}
+
+nav>ul>li{
+	float: left;
+	position: relative;
+	width: 13%;
+	margin-left: 1%;
+}
+
+nav>ul>li>a{
+	display: block;
+	color: #888;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+
+nav>ul>li>a::before,
+nav>ul>li>a::after{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #222;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+nav>ul>li>a::before{
+	top: -6px;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+nav>ul>li>a::after{
+	bottom: -6px;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+nav>ul>li>a:hover,
+nav>ul>.active>a{
+	color: #222;
+}
+
+nav>ul>li>a:hover::before,
+nav>ul>li>a:hover::after,
+nav>ul>.active>a::before,
+nav>ul>.active>a::after{
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+	opacity: 0.9;
+}
+
+nav>ul>li:hover ul{
+	opacity: 0.9;
+	visibility: visible;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+nav>ul ul{
+	position: absolute;
+	width: 180%;
+	border: 1px solid #ccc;
+	border-top: 2px solid #666;
+	background: #fff;
+	opacity: 0;
+	visibility: hidden;
+	top: 40px;
+	left: -40%; 
+	-webkit-transform: translate(0, 20px);
+	-moz-transform: translate(0, 20px);
+	-ms-transform: translate(0, 20px);
+	transform: translate(0, 20px);
+}
+
+nav>ul ul a{
+	display: block;
+	padding: 5px;
+	color: #888;
+	text-align: left;
+}
+
+nav>ul ul a:hover{
+	background: #ccc;
+}
+
+.lang {
+	width:70px;
+	height:24px;
+	padding-left:30px;
+	border:1px solid #d2d4d7;
+	border-radius:20px;
+	position:absolute;
+	right:100px;
+	top: 16px;
+	background:url(../images/icon-lang.png) no-repeat 6px 5px;
+	overflow:hidden;
+	z-index:4;
+}
+.lang:hover {
+	width:137px;
+}
+.lang a { 
+	white-space: nowrap;
+	display:block;
+	float:left;
+	font-size:13px;
+	color:#666;
+	line-height:24px;
+	position:relative;
+	letter-spacing:1px;
+	font-weight:normal;
+}
+
+.lang a:hover{
+	font-weight: bold;
+}
+
+.lang .lang-en{
+	margin-left: 20px;
+}
+
+.lang .lang-en::before{
+	content: '';
+	height: 10px;
+	width: 1px;
+	background: #d2d4d7;
+	position: absolute;
+	left: -10px;
+	top: 7px;
+}
+
+
+header .product{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 60px;
+	width: 75px;
+	background: #66697e;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 4px;
+	font-weight: 700;
+}
+
+header .product span{
+	display: block;
+	cursor: pointer;
+	line-height: 60px;
+}
+
+header .product-box{
+	display: none;
+	width: 270px;
+	opacity: 0.8;
+	padding-top: 30px;
+	text-align: left;
+	position: relative;
+	right: 194px;
+	background: #66697e;
+}
+
+.product-box a{
+	padding-left: 40px;
+	padding-top: 20px;
+	display: block;
+	color: #ded8d5;
+	letter-spacing: 8px;
+	font-size: 1.25em;
+}
+
+.product-box a::before{
+	display: block;
+	position: relative;
+	top: 20px;
+	left: -15px;
+	content: '';
+	height: 15px;
+	width: 1px;
+	background: #888;
+	margin-right: 10px;
+}
+
+.product-box li:hover{
+	background: #888;
+	opacity: 0.8;
+}
+
+
+header .menu{
+	display: none;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background:url(../images/icon-bar.jpg) no-repeat;
+}
+
+/*尾部公共样式*/
+footer{
+	width: 100%;
+	background: #39424b;
+	padding-bottom: 25px;
+	color: #a2a5a8;
+}
+
+footer .part1{
+	padding: 3% 5%;
+}
+
+footer .part1 .footer-box1{
+	position: relative;
+	padding-left: 20%;
+	padding-bottom: 2%;
+	font-size: 0;
+}
+
+footer span, footer a, footer img{
+	display: block;
+}
+
+footer span .footer-logo{
+	display: block;
+	position: absolute;
+	width: 12%;
+	top: 2px;
+	left: 5%;
+}
+
+footer span .footer-weixin{
+	display: block;
+	position: absolute;
+	top: 45px;
+	left: 5.5%;
+	width: 11%;
+	height: auto;
+}
+
+footer .footer-box1 dl{
+	float: left;
+	padding-left: 5%;
+	width: 20%;
+	font-size: 14px;
+}
+
+.footer-box1 dt, .footer-box1 dd{
+	margin-bottom: 15px;
+}
+
+.footer-box1 dt a{
+	font-size: 18px;
+	color: #fff;
+}
+
+footer .part2{
+	text-align: center;
+}
+
+.footer-box1 a{
+	cursor: pointer;
+	color: #a2a5a8;
+}
+
+footer a:hover{
+	color: #fff;
+}
+
+.footer-box2 a{
+	display: inline-block;
+	padding: 10px;
+	color: #a2a5a8;
+}
+
+.footer-box2 a:not(:last-child)::after{
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	left: 10px;
+	height: 13px;
+	width: 1px;
+	content: '';
+	background: #a2a5a8;
+}
+
+
+
+
+/*媒体查询、响应式设计*/
+
+@media (max-width:850px) {
+   	nav, .lang, .product{
+   		display: none;
+   	}
+
+   	header .menu{
+   		display: block;
+   		cursor: pointer;
+   	}
+
+   	header .nav-toggle{
+   		position: absolute;
+   		display: none;
+   		top: 70px;
+   		right: 0;
+   		width: 350px;
+   		padding-top: 20px;
+   		background: #66687d;
+   	}
+
+   	header .nav-toggle a{
+		display: block;
+		color: #ded8d5;
+		padding-left: 40px;
+		padding-top: 20px;
+		letter-spacing: 8px;
+		font-size: 1.25em;
+	}
+
+	header .nav-toggle li:hover{
+		background: #aaa;
+		opacity: 0.8;
+	}
+
+	footer .footer-box1 dl{
+		font-size: 0.5rem;
+	}
+
+	.footer-box1 dt a{
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (min-width: 850px){
+	header{
+		height: 60px;
+		padding: 20px 0;
+	}
+
+	.container{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1280px){
+	.container{
+		margin: 0 auto;
+		width: 1170px;
+		position: relative;
+	}
+
+	.logo{
+		left: -40px;
+	}
+
+	header .product{
+		top: -20px;
+		right: -45px;
+	}
+
+	.lang{
+		top: -4px;
+	}
+}
+
+/*共用样式*/
+.clearfix{
+	*zoom: 1;
+}
+
+.clearfix::before, .clearfix::after{
+	display: table;
+	content: '';
+}
+
+.clearfix::after{
+	clear: both;
+}
+
+.transition-300{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.transition-1000{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.fix{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.f-l{
+	float: left;
+}
+
+.f-r{
+	float: right;
+}
+
+
