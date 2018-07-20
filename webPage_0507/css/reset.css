@@ -1,0 +1,39 @@
+﻿
+html, body, div, dl, dd, dt, ul, ol, li, h1, h2, h3, h4, h5, h6, input, form, p, a, textarea{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑", Arial, serif, sans-serif;
+	font-size: 100%;
+}
+
+ol, ul, li{
+	list-style: none;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+img{
+	display: block;
+	border: none;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after{
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+body{
+	width: 1920px;
+	margin: 0 auto;
+}
+

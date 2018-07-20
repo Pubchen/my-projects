@@ -1,0 +1,37 @@
+﻿
+body, div, dl, dt, dd, ul ,li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea{
+	margin: 0px;
+	padding: 0px;
+	font-family: "microsoft YaHei", 微软雅黑, Arial, sans-serif;
+}
+
+ol, ul, li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+}
+
+img{
+	border: none;
+	display: block;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+body{
+	width: 1500px;
+	margin: 0 auto;
+}
